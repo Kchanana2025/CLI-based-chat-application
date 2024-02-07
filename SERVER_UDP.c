@@ -12,7 +12,8 @@ int main()
     char buff[100];
     int sockfd, clen;
     struct sockaddr_in servaddr, cli;
-    sockfd = socket(AF_INET, SOCK_DGRAM, 0);
+
+        sockfd = socket(AF_INET, SOCK_DGRAM, 0);
     if (sockfd == -1)
     {
         printf("socket creation failed");
